@@ -3,17 +3,18 @@
 # Contributor: Trương Xuân Tính <xuantinh@gmail.com>
 # Contributor: henning mueller <henning@orgizm.net>
 # Contributor: Jerome Rose <jrose dot pub at gmail dot com>
+# Contributor: Bae Sung Hoon < dan990429 at gmail dot com >
 
 pkgname=pgpool-ii
 _pkgname=pgpool-II
-pkgver=4.4.0
-pkgrel=1
+pkgver=4.4.4
+pkgrel=0
 pkgdesc="Middleware that works between PostgreSQL servers and a PostgreSQL database client."
 url="https://www.pgpool.net"
 arch=(i686 x86_64)
 license=(custom)
 depends=(openssl postgresql-libs)
-makedepends=(clang llvm)
+makedepends=(clang-15 llvm-15)
 #makedepends=(clang llvm postgresql)
 options=(!libtool)
 replaces=(pgpool)
@@ -23,7 +24,7 @@ source=(
   ${pkgname}.{service,conf.d,diff}
 )
 
-sha256sums=('85d50996b421ef0a3f362dd6c12854d553d4034a068e9281c65b6d4cc5887f23'
+sha256sums=('10bed66f8197c74dcb00a0e73f618066d5d5e0adc878865c2fcfa1c945e68f4f'
             '6c797a94c1648890a613e201c2ce2e3e2b602103daecc009ebf189578e8e15a0'
             '9d0c12d735595424fad799499d50bc4da8b7f1e7ffc2c21317f8824559bb7aea'
             'c62fc1e31383b875701ffa40c07a5b9d7c8ff36d4a9c9356e831fab612ca8b20')
